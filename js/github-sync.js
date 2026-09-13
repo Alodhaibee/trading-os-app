@@ -14,7 +14,7 @@ let writeQueue = Promise.resolve();
 export function getGitHubConfig(){
   let cfg = {};
   try { cfg = JSON.parse(localStorage.getItem(CONFIG_KEY) || "{}"); } catch (_) {}
-  if (!cfg.owner || cfg.owner === "anasx88" || cfg.owner === "YOUR_GITHUB_USERNAME") cfg.owner = DEFAULT_CONFIG.owner;
+  if (!cfg.owner || cfg.owner === "anasx88" || cfg.owner === "YOUR_GITHUB_USERNAME" || cfg.owner === "coolmanx88") cfg.owner = DEFAULT_CONFIG.owner;
   if (!cfg.repo) cfg.repo = DEFAULT_CONFIG.repo;
   return {...DEFAULT_CONFIG, ...cfg, owner: cfg.owner || DEFAULT_CONFIG.owner, repo: cfg.repo || DEFAULT_CONFIG.repo};
 }
