@@ -1,6 +1,6 @@
 import { refreshFromRemoteIfNewer } from './remote-refresh.js?v=23';
 
-const APP_VERSION='23';
+const APP_VERSION='24';
 
 async function bootTradingOS(){
   await refreshFromRemoteIfNewer();
